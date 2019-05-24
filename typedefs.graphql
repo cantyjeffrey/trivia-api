@@ -1,0 +1,16 @@
+enum Difficulty {
+  easy
+  medium
+  hard
+}
+
+type Question {
+  category: String!
+  prompt: String!
+  difficulty: Difficulty!
+  answer: Boolean!
+}
+
+type Query {
+  questions(limit: Int, category: Int, difficulty: String): [Question]
+}

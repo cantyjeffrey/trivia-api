@@ -1,0 +1,17 @@
+{
+  "name": "trivia",
+  "version": 2,
+  "alias": ["trivia-api.jeffrey.sh"],
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@now/node-server"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/.*",
+      "dest": "index.js"
+    }
+  ]
+}
